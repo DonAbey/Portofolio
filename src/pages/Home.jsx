@@ -1,4 +1,4 @@
-import { ThemeToggle } from "../components/ThemeTooggle";
+import { ThemeToggle, StarBackground } from "../components/ThemeTooggle";
 
 export const Home = () =>{
     return (
@@ -6,8 +6,7 @@ export const Home = () =>{
             {/*Theme toggle*/}
             <ThemeToggle />
             {/*Backgroud Effects*/}
-
-
+            <StarBackground/>
             {/*NavBar*/}
 
             {/*Main Content*/}
