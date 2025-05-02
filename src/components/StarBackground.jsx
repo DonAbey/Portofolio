@@ -9,6 +9,15 @@ export const StarBackground = () => {
     useEffect(() => {   //calling generate stars only once
         generateStars();
         generateMeteors();
+
+        //to resize the number of stars according the screen/window size
+        const handleResize = () => {
+            generateStars();
+        };
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+
+
     },[]);
 
     const generateStars = () => {
@@ -73,8 +82,8 @@ export const StarBackground = () => {
                     key={metoer.id}
                     className="meteor animate-meteor"
                     style={{
-                        width: metoer.size + "px",
-                        height: metoer.size + "px",
+                        width: metoer.size * 30 + "px",
+                        height: metoer.size * 2 + "px",
                         left: metoer.x + "%",
                         top: metoer.y + "%",
                         delay: metoer.delay,
