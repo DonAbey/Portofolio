@@ -123,8 +123,8 @@
 }
 
 @utility text-glow {
-  @apply relative; /*to apply tailwind we need @apply*/
-  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);  /*for normal css*/
+  @apply relative;
+  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
 }
 
 @utility card-hover {
@@ -150,7 +150,7 @@
 }
 
 @utility meteor {
-  @apply absolute bg-linear-to-r from-white via-red-300 to-transparent rounded-full;
+  @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
